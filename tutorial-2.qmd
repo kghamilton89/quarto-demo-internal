@@ -1,0 +1,40 @@
+---
+title: Quarto Basics
+author: Norah Jones
+date: 'May 22, 2021'
+toc: true
+number-sections: true
+bibliography: references.bib
+---
+
+## Colors
+
+- Red
+- Green 
+- Blue
+
+## Shapes
+
+- Square
+- Circle
+- Triangle
+
+## Textures
+
+- Smooth
+- Bumpy
+- Fuzzy
+
+Einstein's theory of special relatively that expresses the equivalence of mass and energy:
+
+$E = mc^{2}$
+
+## Overview
+
+Knuth says always be literate [@knuth1984].
+
+```{python}
+1 + 1
+```
+
+## References

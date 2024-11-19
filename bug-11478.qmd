@@ -1,0 +1,37 @@
+---
+title: Hugo Captions
+format: 
+  html:
+    fig-height: 3
+  hugo-md:
+    fig-height: 2.5
+---
+
+
+```{r}
+#| label: fig-hugo
+#| echo: FALSE
+#| fig-cap: "This should be a numbered caption"
+plot(rnorm(100))
+```
+
+With format: html, there is a numbered caption.
+
+```
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-hugo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="hugo_caption_files/figure-html/fig-hugo-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-hugo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: This should be a numbered caption
+</figcaption>
+</figure>
+```
+
+With format: hugo-md, there is no caption, only an alt-text.
+
+```
+<img
+src="hugo_caption.markdown_strict_files/figure-markdown_strict/fig-hugo-1.png"
+id="fig-hugo" alt="Figure 1: This should be a numbered caption" />`
+```
